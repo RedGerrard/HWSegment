@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'HWSegment_Example' do
+  pod 'HWSegment', :path => '../'
+
+  target 'HWSegment_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
