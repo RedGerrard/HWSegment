@@ -37,8 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1BD3DA5A66E19D8227AFD710 /* HWSegment.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = HWSegment.podspec; path = ../HWSegment.podspec; sourceTree = "<group>"; };
-		2AEB69F13D8F280B9BF6979F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		1BD3DA5A66E19D8227AFD710 /* HWSegment.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HWSegment.podspec; path = ../HWSegment.podspec; sourceTree = "<group>"; };
+		2AEB69F13D8F280B9BF6979F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		361EE1F513A89A3BF8AE34FD /* Pods-HWSegment_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HWSegment_Tests.debug.xcconfig"; path = "Target Support Files/Pods-HWSegment_Tests/Pods-HWSegment_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* HWSegment_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HWSegment_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -66,7 +66,7 @@
 		CFAD2066837B356535703AFD /* Pods-HWSegment_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HWSegment_Example.debug.xcconfig"; path = "Target Support Files/Pods-HWSegment_Example/Pods-HWSegment_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		D19184FE1574122C5D8B7A59 /* Pods_HWSegment_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HWSegment_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E236E309764413C138474486 /* Pods-HWSegment_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HWSegment_Example.release.xcconfig"; path = "Target Support Files/Pods-HWSegment_Example/Pods-HWSegment_Example.release.xcconfig"; sourceTree = "<group>"; };
-		E9D210A8F1F5C7C88E5C410A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		E9D210A8F1F5C7C88E5C410A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +103,6 @@
 				361EE1F513A89A3BF8AE34FD /* Pods-HWSegment_Tests.debug.xcconfig */,
 				C507D2708E67A5E5754ADE71 /* Pods-HWSegment_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -300,15 +299,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-HWSegment_Example/Pods-HWSegment_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/HWSegment/HWSegment.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HWSegment.framework",
 			);
@@ -322,15 +317,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-HWSegment_Tests-checkManifestLockResult.txt",
 			);
@@ -344,15 +335,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-HWSegment_Example-checkManifestLockResult.txt",
 			);

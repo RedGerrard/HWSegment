@@ -1,0 +1,6 @@
+framework module HWSegment {
+  umbrella header "HWSegment-umbrella.h"
+
+  export *
+  module * { export * }
+}

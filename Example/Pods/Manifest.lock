@@ -1,0 +1,16 @@
+PODS:
+  - HWSegment (0.1.0)
+
+DEPENDENCIES:
+  - HWSegment (from `../`)
+
+EXTERNAL SOURCES:
+  HWSegment:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  HWSegment: 864f80102d90f5f81b1011dcd62cfaf97076b0e6
+
+PODFILE CHECKSUM: dad6239f71100b8e7d36a6692b888f0c7da6f73e
+
+COCOAPODS: 1.6.1
