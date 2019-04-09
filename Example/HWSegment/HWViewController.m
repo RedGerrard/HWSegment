@@ -27,11 +27,9 @@
     HWSegmentBar *segmentBar = [[HWSegmentBar alloc]initWithFrame:CGRectMake(0, 60, self.view.width, 35)];
     
     NSArray *titles = @[@"专辑", @"声音", @"下载中",@"专辑", @"声音"];
-//    NSArray *titles = @[@"专辑", @"声音"];
-//    NSArray *titles = @[@"专辑专辑", @"声xxx音", @"下载中xxxx", @"下载中xxxx", @"下载中xxxx", @"声xxx音", @"下载中xxxx", @"下载中xxxx", @"下载中xxxx"];
-   
-    [segmentBar setUpWithTitles:titles titleNormalColor:[UIColor lightGrayColor] titleSelectedColor:[UIColor redColor] titleFontSize:14 isTitleSelectedBold:NO lineColor:[UIColor redColor] defaultIndex:defaultIndex];
  
+    [segmentBar setUpWithTitles:titles titleNormalColor:[UIColor lightGrayColor] titleSelectedColor:[UIColor redColor] titleFontSize:14 titleSelectedFontSize:(CGFloat)16 isTitleSelectedBold:NO lineColor:[UIColor redColor] defaultIndex:defaultIndex];
+    
     [self.view addSubview:segmentBar];
     
     

@@ -19,11 +19,11 @@ Pod::Spec.new do |s|
 
   s.description      = '分为选项卡视图和选项卡容器控制器，可拆分单独使用'
 
-  s.homepage         = 'https://github.com/wozaizhelishua/HWSegment'
+  s.homepage         = 'https://github.com/RedGerrard/HWSegment'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'wozaizhelishua' => 'kingboy941520@126.com' }
-  s.source           = { :git => '', :tag => s.version.to_s }
+  s.author           = { 'RedGerrard' => '417705652@qq.com' }
+  s.source           = { :git => 'https://github.com/RedGerrard/HWSegment.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'

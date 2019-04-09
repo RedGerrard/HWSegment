@@ -27,9 +27,10 @@ typedef void(^ClickBlock)(NSInteger fromIndex, NSInteger toIndex);
  @param titleNormalColor 标题常规颜色
  @param titleSelectedColor 标题选中颜色
  @param titleFontSize 标题字体大小
+ @param titleSelectedFontSize 标题被选中时字体大小
  @param isTitleSelectedBold 标题选中时字体是否需要加粗
  @param lineColor 下划线颜色
  @param defaultIndex 初始显示第几项
  */
--(void)setUpWithTitles:(NSArray<NSString *>*)titles titleNormalColor:(UIColor *)titleNormalColor titleSelectedColor:(UIColor *)titleSelectedColor titleFontSize:(CGFloat)titleFontSize isTitleSelectedBold:(BOOL)isTitleSelectedBold lineColor:(UIColor *)lineColor defaultIndex:(NSInteger) defaultIndex;
+-(void)setUpWithTitles:(NSArray<NSString *>*)titles titleNormalColor:(UIColor *)titleNormalColor titleSelectedColor:(UIColor *)titleSelectedColor titleFontSize:(CGFloat)titleFontSize titleSelectedFontSize:(CGFloat)titleSelectedFontSize isTitleSelectedBold:(BOOL)isTitleSelectedBold lineColor:(UIColor *)lineColor defaultIndex:(NSInteger) defaultIndex;
 @end

@@ -32,6 +32,8 @@
     BOOL _isTitleSelectedBold;
     // 按钮字体大小
     CGFloat _titleFontSize;
+    // 按钮被选中字体大小
+    CGFloat _titleSelectedFontSize;
     // 默认第几项
     NSInteger _defaultIndex;
      
@@ -75,9 +77,10 @@
 
 #pragma mark - 接口
 
--(void)setUpWithTitles:(NSArray<NSString *>*)titles titleNormalColor:(UIColor *)titleNormalColor titleSelectedColor:(UIColor *)titleSelectedColor titleFontSize:(CGFloat)titleFontSize isTitleSelectedBold:(BOOL)isTitleSelectedBold lineColor:(UIColor *)lineColor defaultIndex:(NSInteger) defaultIndex{
+-(void)setUpWithTitles:(NSArray<NSString *>*)titles titleNormalColor:(UIColor *)titleNormalColor titleSelectedColor:(UIColor *)titleSelectedColor titleFontSize:(CGFloat)titleFontSize titleSelectedFontSize:(CGFloat)titleSelectedFontSize isTitleSelectedBold:(BOOL)isTitleSelectedBold lineColor:(UIColor *)lineColor defaultIndex:(NSInteger) defaultIndex{
     
     _titleFontSize = titleFontSize;
+    _titleSelectedFontSize = titleSelectedFontSize;
     _isTitleSelectedBold = isTitleSelectedBold;
     _defaultIndex = defaultIndex;
     
@@ -173,15 +176,22 @@
     _selectIndex = btn.tag;
 
     _lastBtn.selected = NO;
-    if (_isTitleSelectedBold) {
+    
+    if (_titleFontSize != _titleSelectedFontSize) {
         _lastBtn.titleLabel.font = [UIFont systemFontOfSize:_titleFontSize];
+        [_lastBtn sizeToFit];
     }
     
     
     btn.selected = YES;
     if (_isTitleSelectedBold) {
-        btn.titleLabel.font = [UIFont boldSystemFontOfSize:_titleFontSize];
+        
+        btn.titleLabel.font = [UIFont boldSystemFontOfSize:_titleSelectedFontSize];
+    }else{
+        btn.titleLabel.font = [UIFont systemFontOfSize:_titleSelectedFontSize];
     }
+    [btn sizeToFit];
+
     
     _lastBtn = btn;
 
